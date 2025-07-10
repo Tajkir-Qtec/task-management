@@ -1,0 +1,100 @@
+import Task from '../app/task.model';
+
+export const tasks: Task[] = [
+    {
+        "_id": "64f9d7f33d134c4a9f992130",
+        "title": "task maagement app",
+        "description": "\n\n2. Task Creation and Management:\n   - Allow users to create tasks with a title, description, due date, and priority level.\n   - Users should be able to assign tasks to other team members.\n   - Implement a way to mark tasks as completed or in progress.\n",
+        "priority": "Urgent",
+        "date": "09/8/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64f9f3563d134c4a9f992131",
+        "title": "web development",
+        "description": "do the task manage app on web app",
+        "priority": "High",
+        "date": "09/8/2023",
+        "status": "incompleted"
+    },
+    {
+        "_id": "64f9e3954d04bc6b7eea600f",
+        "title": "azios auth workin",
+        "description": "fdfsdgdi50005000500050005000",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64f9e5a20e82037f3dbe306c",
+        "title": "fdsfsdfdsfdsfsdfdsfdsfs",
+        "description": "sfsdfdsfsd",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64fb851127007477fc0428ef",
+        "title": "hi",
+        "description": "efjjfogjogjo\n",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64fb856727007477fc0428f0",
+        "title": "fdsfdsf",
+        "description": "dfgdfgdfgd",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "incompleted"
+    },
+    {
+        "_id": "64fb85a527007477fc0428f1",
+        "title": "4645645",
+        "description": "hghgf",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "incompleted"
+    },
+    {
+        "_id": "64f9ea7f5a0cf921214518cb",
+        "title": "dsfdsfdf",
+        "description": "hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello",
+        "priority": "High",
+        "date": "09/8/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64f9ead75a0cf921214518cc",
+        "title": "dfd",
+        "description": "fd",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64f9eb085a0cf921214518cd",
+        "title": "gfhgfh",
+        "description": "ghgh",
+        "priority": "High",
+        "date": "09/7/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "64fd4089e0c809dc40877547",
+        "title": "f",
+        "description": "fff",
+        "priority": "High",
+        "date": "09/10/2023",
+        "status": "completed"
+    },
+    {
+        "_id": "650d7dd5a97931b011f62dc0",
+        "title": "vvv",
+        "description": "hhjgh",
+        "priority": "High",
+        "date": "09/22/2023",
+        "status": "incompleted"
+    }
+]

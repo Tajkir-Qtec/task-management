@@ -1,1 +1,12 @@
-<p>incomplete-task works!</p>
+<section class="container">
+    <h2>Incomplete Tasks</h2>
+    <div class="task-list">
+        <div *ngFor="let task of tasks" class="task-item">
+            <h3 class="task-title">{{ task.title }}</h3>
+            <p class="task-description">{{ task.description }}</p>
+            <span class="task-priority">{{ task.priority }}</span>
+            <span class="task-date">{{ task.date | date }}</span>
+            <button (click)="markAsCompleted(task._id)" class="primary-btn">✔️</button>
+        </div>
+    </div>
+</section>

@@ -60,3 +60,24 @@ body {
 button {
   cursor: pointer;
 }
+
+.primary-btn {
+  background-color: #89ebeb;
+  padding: 0px;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: inline;
+  transition: .3s;
+
+  &:active {
+    scale: .95;
+  }
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}

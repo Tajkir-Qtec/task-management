@@ -1,0 +1,10 @@
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .9rem;
+
+    .task-item {
+        border: 2px solid #ccc;
+        border-radius: 10px;
+    }
+}
