@@ -1,0 +1,16 @@
+.add-btn {
+    outline: none;
+    background: #dfd7d7f5;
+    border: none;
+    padding: 10px 20px;
+    transition: .3s;
+    letter-spacing: 2px;
+
+    &:hover {
+        background: #cccccc4f;
+    }
+
+    &:active {
+        scale: .95;
+    }
+}

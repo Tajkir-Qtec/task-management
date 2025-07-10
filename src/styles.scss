@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+body {
+  background-color: rgba(0, 255, 255, 0.288);
+}
+
+@for $i from 0 through 10 {
+  .p-#{$i} {
+    padding: #{$i * 0.25}rem;
+  }
+}
+
+@for $i from 0 through 10 {
+  .h-#{$i} {
+    height: #{$i * 0.25}rem;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i * 0.25}rem;
+  }
+}
+
+@for $i from 0 through 10 {
+  .border-#{$i} {
+    border: #{$i * 0.25}rem solid rgba(14, 199, 199, 0.205);
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.rounded-md {
+  border-radius: 10px;
+}
+
+.border {
+  border: 1px solid rgba(14, 199, 199, 0.205);
+}
+
+button {
+  cursor: pointer;
+}
