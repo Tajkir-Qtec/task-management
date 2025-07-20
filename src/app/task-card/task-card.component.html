@@ -3,7 +3,7 @@
         <h3 class="task-title">{{ task.title }}</h3>
         <div class="flex gap-2">
             <button class="primary-btn">✔️</button>
-            <button class="primary-btn">🖊️</button>
+            <button class="primary-btn" (click)="editTask()">🖊️</button>
         </div>
     </div>
     <p class="task-description">{{ task.description }}</p>

@@ -9,7 +9,8 @@ import Task from 'src/model/task.model';
 export class TaskModalComponent implements OnInit {
   @Input() hideModal!: () => void;
   @Input() submitForm!: (data: Task) => void;
-
+  @Input() selectedTask: Task | null = null;
+  
   constructor() { }
 
   ngOnInit(): void { }

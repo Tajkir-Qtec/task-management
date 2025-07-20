@@ -2,9 +2,9 @@
     <h1>Add Task</h1>
     <form #taskModalForm="ngForm" (ngSubmit)="submitForm(taskModalForm.value)">
         <div class="input-fields">
-            <input ngModel type="text" name="title" id="" placeholder="Task Title">
-            <input ngModel type="text" name="description" id="" placeholder="Task Description">
-            <input ngModel type="date" name="date" id="" placeholder="Task Date">
+            <input [ngModel]="selectedTask?.title" type="text" name="title" id="" placeholder="Task Title">
+            <input [ngModel]="selectedTask?.description" type="text" name="description" id="" placeholder="Task Description">
+            <input [ngModel]="selectedTask?.date" type="date" name="date" id="" placeholder="Task Date">
         </div>
         <button type="submit" class="submit-btn">Add Task</button>
     </form>
