@@ -1,6 +1,11 @@
 <div class="task-item">
-    <h3 class="task-title">{{ task.title }}</h3>
+    <div class="flex justify-between items-center">
+        <h3 class="task-title">{{ task.title }}</h3>
+        <div class="flex gap-2">
+            <button class="primary-btn">✔️</button>
+            <button class="primary-btn">🖊️</button>
+        </div>
+    </div>
     <p class="task-description">{{ task.description }}</p>
     <span class="task-date">{{ task.date }}</span>
-    <button class="primary-btn">✔️</button>
 </div>

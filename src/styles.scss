@@ -32,6 +32,11 @@ body {
     border: #{$i * 0.25}rem solid rgba(14, 199, 199, 0.205);
   }
 }
+@for $i from 0 through 10 {
+  .gap-#{$i} {
+    gap: #{$i * 0.25}rem;
+  }
+}
 
 .flex {
   display: flex;
