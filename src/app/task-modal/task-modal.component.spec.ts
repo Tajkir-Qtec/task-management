@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IncompleteTaskComponent } from './incomplete-task.component';
+import { TaskModalComponent } from './task-modal.component';
 
-describe('IncompleteTaskComponent', () => {
-  let component: IncompleteTaskComponent;
-  let fixture: ComponentFixture<IncompleteTaskComponent>;
+describe('TaskModalComponent', () => {
+  let component: TaskModalComponent;
+  let fixture: ComponentFixture<TaskModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IncompleteTaskComponent ]
+      declarations: [ TaskModalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IncompleteTaskComponent);
+    fixture = TestBed.createComponent(TaskModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

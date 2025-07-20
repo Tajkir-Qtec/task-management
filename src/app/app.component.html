@@ -1,8 +1,10 @@
 <main>
   <div class="flex items-center justify-between">
     <h2>Welcome To Task Management</h2>
-    <button class="add-btn rounded-md">Add Task</button>
+    <button class="add-btn rounded-md" (click)="showModal()">Add Task</button>
   </div>
   <hr class="border h-0 p-0 mt-2" />
-  <app-incomplete-task></app-incomplete-task>
+  <app-incomplete-task [tasks]="incompleteTasks()"></app-incomplete-task>
+  <app-complete-task [tasks]="completeTasks()"></app-complete-task>
+  <app-task-modal *ngIf="show" [hideModal]="hideModal()"></app-task-modal>
 </main>

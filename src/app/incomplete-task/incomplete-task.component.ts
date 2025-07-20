@@ -1,19 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { tasks } from 'src/assets/taskManagement.tasks';
+import { Component, Input, OnInit } from '@angular/core';
+import Task from 'src/model/task.model';
 
 @Component({
   selector: 'app-incomplete-task',
   templateUrl: './incomplete-task.component.html',
-  styleUrls: ['./incomplete-task.component.scss']
+  styleUrls: ['./incomplete-task.component.scss'],
 })
 export class IncompleteTaskComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  tasks = tasks.filter(task => task.status === 'incompleted');
-  markAsCompleted(task: any) {
-    tasks.filter(t => t._id === task._id)[0].status = 'completed';
-  }
+  ngOnInit(): void {}
+  
+  @Input() tasks: Task[] = [];
 }
