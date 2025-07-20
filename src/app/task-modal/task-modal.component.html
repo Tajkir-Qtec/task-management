@@ -1,11 +1,10 @@
 <div class="modal">
     <h1>Add Task</h1>
-    <form>
+    <form #taskModalForm="ngForm" (ngSubmit)="submitForm(taskModalForm.value)">
         <div class="input-fields">
-            <input type="text" name="title" id="" placeholder="Task Title">
-            <input type="text" name="title" id="" placeholder="Task Description">
-            <input type="text" name="title" id="" placeholder="Task Priority">
-            <input type="date" name="title" id="" placeholder="Task Date">
+            <input ngModel type="text" name="title" id="" placeholder="Task Title">
+            <input ngModel type="text" name="description" id="" placeholder="Task Description">
+            <input ngModel type="date" name="date" id="" placeholder="Task Date">
         </div>
         <button type="submit" class="submit-btn">Add Task</button>
     </form>

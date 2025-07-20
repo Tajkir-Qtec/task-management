@@ -6,6 +6,7 @@ import { IncompleteTaskComponent } from './incomplete-task/incomplete-task.compo
 import { CompleteTaskComponent } from './complete-task/complete-task.component';
 import { TaskCardComponent } from './task-card/task-card.component';
 import { TaskModalComponent } from './task-modal/task-modal.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TaskModalComponent } from './task-modal/task-modal.component';
     TaskModalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
