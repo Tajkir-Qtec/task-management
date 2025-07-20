@@ -6,5 +6,5 @@
   <hr class="border h-0 p-0 mt-2" />
   <app-incomplete-task [tasks]="incompleteTasks()"></app-incomplete-task>
   <app-complete-task [tasks]="completeTasks()"></app-complete-task>
-  <app-task-modal *ngIf="show" [hideModal]="hideModal" [submitForm]="submitForm.bind(this)"></app-task-modal>
+  <app-task-modal *ngIf="show" [hideModal]="hideModal.bind(this)" [submitForm]="submitForm.bind(this)"></app-task-modal>
 </main>

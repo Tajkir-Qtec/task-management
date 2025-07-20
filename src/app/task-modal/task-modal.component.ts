@@ -7,7 +7,7 @@ import Task from 'src/model/task.model';
   styleUrls: ['./task-modal.component.scss'],
 })
 export class TaskModalComponent implements OnInit {
-  @Input() hideModal: any;
+  @Input() hideModal!: () => void;
   @Input() submitForm!: (data: Task) => void;
 
   constructor() { }
