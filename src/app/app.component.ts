@@ -28,4 +28,16 @@ export class AppComponent {
   hideModal() {
     this.show = false;
   }
+
+  submitForm(formData: any) {
+    const newTask: Task = {
+      _id: Date.now().toString(),
+      title: formData.title,
+      description: formData.description,
+      date: formData.date,
+      status: 'incompleted',
+    };
+    this.tasks = [...this.tasks, newTask];
+    this.hideModal();
+  }
 }

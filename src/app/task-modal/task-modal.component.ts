@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import Task from 'src/model/task.model';
 
 @Component({
   selector: 'app-task-modal',
@@ -7,16 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TaskModalComponent implements OnInit {
   @Input() hideModal: any;
+  @Input() submitForm!: (data: Task) => void;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
-
-  submitForm(formData: any) {
-    // Logic to handle form submission
-    console.log('Form submitted');
-    console.log(formData);
-    // You can add more logic here, such as validation or sending data to a service
-    this.hideModal(); // Assuming hideModal is a method to close the modal
-  }
+  ngOnInit(): void { }
 }
