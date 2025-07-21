@@ -1,6 +1,6 @@
 <section class="container">
     <h2>Incomplete Tasks</h2>
     <div class="task-list">
-        <app-task-card *ngFor="let task of tasks" [task]="task" (onEdit)="handleEdit(task)"></app-task-card>
+        <app-task-card *ngFor="let task of tasks" [task]="task" (onEdit)="handleEdit(task)" (onComplete)="completeTask(task)"></app-task-card>
     </div>
 </section>

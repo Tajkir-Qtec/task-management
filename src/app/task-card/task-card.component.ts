@@ -9,6 +9,7 @@ import Task from 'src/model/task.model';
 export class TaskCardComponent implements OnInit {
   @Input() task!: Task;
   @Output() onEdit = new EventEmitter<Task>();
+  @Output() onComplete = new EventEmitter<Task>();
 
   constructor() { }
 
@@ -16,5 +17,9 @@ export class TaskCardComponent implements OnInit {
 
   editTask() {
     this.onEdit.emit(this.task);
+  }
+
+  handleCompleteTask() {
+    this.onComplete.emit();
   }
 }

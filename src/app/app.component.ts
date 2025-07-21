@@ -49,4 +49,11 @@ export class AppComponent {
     this.hideModal();
     this.selectedTask = null;
   }
+
+  markTaskAsComplete(task: Task) {
+    const updated = this.tasks.map(t =>
+      t._id === task._id ? { ...t, status: 'completed' as 'completed' } : t
+    );
+    this.tasks = updated;
+  }
 }
