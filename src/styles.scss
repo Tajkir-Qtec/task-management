@@ -2,7 +2,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 5px 10px;
 }
 
 body {
@@ -32,6 +31,7 @@ body {
     border: #{$i * 0.25}rem solid rgba(14, 199, 199, 0.205);
   }
 }
+
 @for $i from 0 through 10 {
   .gap-#{$i} {
     gap: #{$i * 0.25}rem;
@@ -42,12 +42,19 @@ body {
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .block {
   display: block;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+.justify-end {
+  justify-content: end;
 }
 
 .items-center {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { tasks } from 'src/assets/taskManagement.tasks';
 import Task from 'src/model/task.model';
 
@@ -13,6 +14,11 @@ export class AppComponent {
   selectedTask: Task | null = null;
 
   tasks: Task[] = tasks;
+
+  constructor(private translateService: TranslateService) {
+    this.translateService.setDefaultLang('ja');
+    this.translateService.use(localStorage.getItem('lan') || 'ja');
+  }
 
   incompleteTasks(): Task[] {
     return this.tasks.filter((task) => task.status === 'incompleted');
